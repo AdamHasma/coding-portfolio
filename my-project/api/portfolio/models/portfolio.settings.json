@@ -1,0 +1,35 @@
+{
+  "kind": "collectionType",
+  "collectionName": "portfolios",
+  "info": {
+    "name": "Portfolio",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "Headline": {
+      "type": "string"
+    },
+    "Link": {
+      "type": "string"
+    },
+    "Cover": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "Recent": {
+      "type": "boolean"
+    }
+  }
+}
