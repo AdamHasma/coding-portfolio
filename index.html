@@ -14,18 +14,9 @@
     <div id="title-container">
 
     </div>
+
   </div>
-  <script>
-    $.ajax({
-      method: 'GET',
-      url: 'http://localhost:1337/Homepage',
-      success: function(response) {
-        const titleContainer = document.getElementById('title-container');
-        let title = `<h1 class="title">${response.Headline}</h1>`;
-        titleContainer.innerHTML += title;
-      }
-    })
-  </script>
+  <script type="text/javascript" src="script.js"></script>
 </body>
 
 </html>
