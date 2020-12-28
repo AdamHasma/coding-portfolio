@@ -9,10 +9,6 @@ h1, h2, h3 {
   display: block;
 }
 
-img {
-  border: 6px solid rgb(181, 230, 193);
-}
-
 body {
   color: rgb(181, 230, 193);
   background-color: rgb(36, 34, 43);
@@ -41,4 +37,7 @@ a:hover {
 }
 
 #cover-image {
+  border-style: solid;
+  border: 6px solid rgb(181, 230, 193);
+  max-width: 85vw;
   width: 720px;
